@@ -1,0 +1,7 @@
+@import "../../style/custom.scss";
+
+.list-group-item-lightgreen.list-group-item-action.active {
+  background-color: $secondary;
+  color: #6c757d;
+  border-left: 4px solid $primary !important;
+}

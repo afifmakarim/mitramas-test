@@ -1,0 +1,69 @@
+$body-bg: #f1f7f2;
+$primary: #42934a;
+$secondary: #f1f7f2;
+$muted: gray;
+
+body {
+  margin: 0;
+  font-family: "Poppins" !important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+// custom breadcrumbs
+.breadcrumb-item + .breadcrumb-item::before {
+  content: var(--bs-breadcrumb-divider, ">") !important ;
+}
+
+// desktop
+
+.content-wrapper {
+  display: grid;
+  grid-gap: 2rem;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1.5fr 1.5fr;
+  grid-template-areas:
+    "profile location location"
+    "profile account-bank activity"
+    "profile relation activity";
+}
+
+#profile {
+  grid-area: profile;
+}
+#location {
+  grid-area: location;
+}
+#account-bank {
+  grid-area: account-bank;
+}
+#activity {
+  grid-area: activity;
+}
+#relation {
+  grid-area: relation;
+}
+
+// tablet
+@media only screen and (max-width: 1200px) {
+  .content-wrapper {
+    grid-gap: 2rem;
+    grid-template-areas:
+      "profile"
+      "location"
+      "account-bank"
+      "relation"
+      "activity";
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+  }
+}
+
+// Import Bootstrap and its default variables
+@import "~bootstrap/scss/bootstrap.scss";
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");

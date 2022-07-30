@@ -1,0 +1,28 @@
+#profile .logo {
+  position: absolute;
+  right: 0;
+  left: 0;
+  width: 150px;
+  margin: auto;
+}
+
+#profile p,
+#profile h4 {
+  font-size: 0.75rem; /* 12px */
+  line-height: 1rem; /* 16px */
+}
+
+#profile h4 {
+  font-weight: 400;
+}
+
+.profile-name {
+  margin-top: 6rem;
+}
+
+// custom button link
+.btn-link {
+  text-decoration: none !important;
+  font-size: 0.75rem; /* 12px */
+  line-height: 1rem; /* 16px */
+}

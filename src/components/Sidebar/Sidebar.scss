@@ -1,0 +1,30 @@
+@import "../../style/custom.scss";
+
+.sidebar-wrapper {
+  // width: 20% !important;
+  min-height: 100vh !important;
+}
+
+.hamburger {
+  display: none !important;
+}
+
+.btn-lightgreen {
+  color: black;
+  border: none;
+}
+
+.btn-lightgreen:hover {
+  background: $secondary;
+}
+
+@media only screen and (max-width: 1200px) {
+  .sidebar-item {
+    display: none !important;
+  }
+
+  .hamburger {
+    display: flex !important;
+    cursor: pointer;
+  }
+}
